@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+		.body {
+			background-color:lightgreen;
+			
+		}
+	</style>
+</head>
+
+<body class="body">
+	<form action="updated" method="get">
+	<table border="2"style="margin-left:auto;margin-right:auto">
+			<tr>
+				<th>Employee Id</th>
+				<th>Employee Name</th>
+				<th>Employee Address</th>
+				<th>Employee Phone</th>
+				<th>Employee Salary</th>
+			</tr>
+			<tr>
+				<td><input type="number" name="id" th:value="${empList.id}"></td>
+				<td><input type="text" name="employeeName" th:value="${empList.employeeName}"></td>
+				<td><input type="text" name="employeeAddress" th:value="${empList.employeeAddress}"></td>
+				<td><input type="number" name="employeePhone" th:value="${empList.employeePhone}"></td>
+				<td><input type="number" name="employeeSalary" th:value="${empList.employeeSalary}"></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Submit</button></center></td>
+			</tr>
+		</table>
+		</form>
+</body>
+
+</html>
